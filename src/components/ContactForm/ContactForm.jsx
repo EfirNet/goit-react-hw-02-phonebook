@@ -36,35 +36,33 @@ export class ContactForm extends Component {
         <Label>
           Name
           <Input
+            type="text"
+            name="name"
             onChange={this.handleChange}
             placeholder="enter name..."
             value={this.state.name}
-            id={randomId}
-            type="text"
-            name="name"
             pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
             title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
+            id={randomId}
             required
           />
         </Label>
         <Label>
           Number
           <Input
+            type="tel"
+            name="number"
             onChange={this.handleChange}
             placeholder="enter phone number..."
             value={this.state.number}
-            id={randomId}
-            type="tel"
-            name="number"
             pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
             title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
+            id={randomId}
             required
           />
         </Label>
 
-        <Button onClick={this.handleSubmit} type="button">
-          Add contact
-        </Button>
+        <Button type="sububmit">Add contact</Button>
       </Form>
     );
   }
