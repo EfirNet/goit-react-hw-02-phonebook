@@ -32,7 +32,7 @@ export class ContactForm extends Component {
 
     return (
       <Form onSubmit={this.handleSubmit}>
-        <Label htmlFor={randomId}>
+        <Label>
           Name
           <Input
             onChange={this.handleChange}
@@ -46,7 +46,7 @@ export class ContactForm extends Component {
             required
           />
         </Label>
-        <Label htmlFor={randomId}>
+        <Label>
           Number
           <Input
             onChange={this.handleChange}
