@@ -62,7 +62,7 @@ export class ContactForm extends Component {
           />
         </Label>
 
-        <Button type="sububmit">Add contact</Button>
+        <Button type="submit">Add contact</Button>
       </Form>
     );
   }
