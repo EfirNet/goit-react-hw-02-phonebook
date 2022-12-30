@@ -51,9 +51,11 @@ export const Button = styled.button`
       background-color: #ffffff2f;
       border: 1px solid #f3b9ee;
       cursor: pointer;
-      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+      
+      /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
         rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
       &:hover {
         box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
           rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
