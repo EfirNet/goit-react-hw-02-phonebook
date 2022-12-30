@@ -5,11 +5,11 @@ export const Form = styled.form`
       flex-direction: column;
       justify-content: center;
       margin: 0 auto;
-      width: 200px;
+      width: 250px;
       padding: 30px 25px;
       border-radius: 5px;
-      box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
-        rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+      background-color: #00000090;
     `;
 
 export const Label = styled.label`
@@ -20,7 +20,7 @@ export const Label = styled.label`
     `;
 
 export const Input = styled.input`
-      width: 190px;
+      width: 240px;
       height: 23px;
       border-radius: 5px;
       padding: 3px;
@@ -33,10 +33,10 @@ export const Input = styled.input`
         font-size: 12px;
         letter-spacing: 1px;
         padding-left: 3px;
-        &:hover {
+        /* &:hover {
           box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
             rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
-        }
+        } */
       }
     `;
 
@@ -48,18 +48,15 @@ export const Button = styled.button`
       margin: 0 auto;
       text-transform: uppercase;
       letter-spacing: 2px;
-      background-color: #ffffff2f;
-      border: 1px solid #f3b9ee;
+      background-color: #ffffff7f;
+      border: 0;
       cursor: pointer;
-      box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
-      
-      /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-        rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
       &:hover {
         box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
           rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
           rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-        background-color: #ffffff7f;
+        background-color: #ffffff2f;
       }
     `;
