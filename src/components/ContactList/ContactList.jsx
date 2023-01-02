@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Ul, Button, Name, Number } from './ContactList.styled';
 
-export const ContactList = ({ contacts, onDeleteContact }) => (
+const ContactList = ({ contacts, onDeleteContact }) => (
   <Ul>
     {contacts.map(({ id, name, number }) => (
       <li key={id} id={id}>
@@ -16,6 +16,8 @@ export const ContactList = ({ contacts, onDeleteContact }) => (
 );
 
 ContactList.propTypes = {
-  contacts: PropTypes.string,
+  contacts: PropTypes.array,
   onDeleteContact: PropTypes.func.isRequired,
 };
+
+export default ContactList;
